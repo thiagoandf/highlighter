@@ -2,8 +2,6 @@ import * as vscode from 'vscode';
 import { TextDocument, TextEditor } from 'vscode';
 
 export function activate(context: vscode.ExtensionContext) {
-	console.log('Congratulations, your extension "tabs-api-sample" is now active!');
-
 	const typeParser = (document: Record<string, any> | undefined): TextDocument => {
 		if (document?.document) {
 			return document.document;
